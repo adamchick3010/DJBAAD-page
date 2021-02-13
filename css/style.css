@@ -1,0 +1,485 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0 5px;
+}
+
+p {
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 11px;
+}
+
+.underline {
+  width: 70px;
+  height: 3px;
+  background-color: #039dff;
+  margin: -8px auto;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.scroll-fix::before {
+  content: ' ';
+  display: block;
+  height: 49.4px;
+  margin-top: -49.4px;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+nav {
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  text-transform: uppercase;
+}
+
+nav a, nav i {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #039dff;
+}
+
+nav i {
+  padding: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav span {
+  text-transform: lowercase;
+}
+
+nav .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav .nav-item {
+  font-size: 10px;
+  margin: -6px 0;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+nav .navbar-toggler:hover {
+  font-size: 1.3rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav .active {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  color: #fff;
+  overflow: hidden;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/gosiaradektuo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+header .hero-text h1 {
+  font-size: 20px;
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 5px;
+}
+
+header .hero-text p {
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+header .btn-outline-light:hover {
+  text-transform: uppercase;
+}
+
+main #services .jumbotron {
+  position: relative;
+  background-image: url("../img/18tkaMartynyPolak.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+main #services .services-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+main #services .wrapper {
+  color: white;
+}
+
+main #services .wrapper h2 {
+  padding-top: 10px;
+}
+
+main #services .wrapper .row .text-center {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  padding: 20px;
+  visibility: hidden;
+}
+
+main #services .wrapper .row .text-center p {
+  font-size: 35px;
+  margin-bottom: -20px;
+}
+
+main #services .wrapper .row .text-center h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+main #services .wrapper .row .text-center:hover {
+  color: #039dff;
+}
+
+main #portfolio .jumbotron .wrapper {
+  padding-top: 0;
+}
+
+main #portfolio .jumbotron h2, main #portfolio .jumbotron p {
+  text-align: center;
+  padding: 10px 0;
+}
+
+main #portfolio .jumbotron h2 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+main #portfolio .jumbotron p {
+  margin-bottom: 0px;
+  padding: 20px 0 10px 0;
+}
+
+main #portfolio .jumbotron .card-title {
+  text-align: center;
+}
+
+main #portfolio .carousel-inner .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+main #portfolio .carousel-inner .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+main #offer .offer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 30px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+main #offer .offer-wrapper .offer-box {
+  margin: 20px 10px;
+  padding: 10px 0;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+main #offer .offer-wrapper .offer-box h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #039dff;
+}
+
+main #offer .offer-wrapper .offer-box p {
+  padding: 2px 0;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+main #offer .offer-wrapper .offer-box i {
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+main #offer .offer-wrapper .offer-box button {
+  padding: 10px 20px;
+}
+
+main #offer .offer-wrapper .offer-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #guarantee .jumbotron {
+  position: relative;
+  background-image: url(../img/tuovinylsm.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+main #guarantee .jumbotron .guarantee-shadow {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+main #guarantee .jumbotron h2 {
+  color: white;
+  padding-top: 40px;
+}
+
+main #guarantee .jumbotron .card-deck {
+  margin: 50px auto 0px;
+  padding-bottom: 30px;
+}
+
+main #guarantee .jumbotron .card-deck h5 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main #guarantee .jumbotron .card-deck p {
+  font-size: 14px;
+}
+
+main #guarantee .jumbotron .card-deck .card {
+  height: 410px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+main #guarantee .jumbotron .card-deck .card p {
+  padding: 0;
+}
+
+main #guarantee .jumbotron .card-deck .card:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+main #achievements .jumbotron .text-center {
+  padding: 10px;
+}
+
+main #achievements .jumbotron .text-center p {
+  padding: 5px 0;
+}
+
+main #achievements .jumbotron .text-center p i {
+  font-size: 60px;
+}
+
+main #contact .jumbotron {
+  overflow-x: hidden;
+  position: relative;
+  background-image: url(../img/keepintouchsm.png);
+  background-position: left;
+  background-size: cover;
+  z-index: 0;
+  color: white;
+}
+
+main #contact .jumbotron .guarantee-shadow {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+main #contact .jumbotron .row {
+  padding-top: 20px;
+}
+
+main #contact .jumbotron .row a {
+  text-decoration: none;
+  color: white;
+}
+
+main #contact .jumbotron .row .text-center {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  padding: 0;
+}
+
+main #contact .jumbotron .row p {
+  font-size: 16px;
+  padding: 0px;
+}
+
+main #contact .jumbotron .row p i {
+  font-size: 30px;
+  padding: 0px;
+}
+
+main #contact .jumbotron .row p span {
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+main #contact .jumbotron .row .text-center:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer p {
+  margin: 0;
+  padding: 3px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+@media (max-width: 767px) {
+  .fa-angle-double-down {
+    font-size: 0px;
+  }
+}
+
+@media (min-width: 1120px) {
+  main #portfolio .carousel-inner .carousel-item img {
+    top: 50%;
+  }
+}
+
+@media (min-width: 1420px) {
+  main #portfolio .carousel-inner .carousel-item img {
+    top: 60%;
+  }
+}
+
+@media (min-width: 1670px) {
+  main #portfolio .carousel-inner .carousel-item {
+    background-size: cover;
+  }
+  main #portfolio .carousel-inner .carousel-item img {
+    top: 70%;
+  }
+  main #aboutus .jumbotron .wrapper p {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 436px) {
+  main #guarantee .jumbotron .card-deck .card {
+    height: 450px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

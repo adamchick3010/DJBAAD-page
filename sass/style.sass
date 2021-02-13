@@ -1,0 +1,395 @@
+$blue-color: #039dff
+    
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+body
+    position: relative
+    background-color: #333
+    font-family: 'Montserrat', sans-serif
+    
+
+.wrapper
+    max-width: 1920px
+    width: 80%
+    margin: 0px auto
+    padding: 20px
+
+h2
+    text-transform: uppercase
+    text-align: center
+    font-size: 24px
+    padding: 20px 0 5px
+    
+p
+    text-align: center
+    padding: 30px 10px
+    font-size: 11px
+
+.underline
+    width: 70px
+    height: 3px
+    background-color: $blue-color
+    margin: -8px auto
+
+.jumbotron
+    margin-bottom: 0px
+    padding: 0
+
+.scroll-fix::before
+    content: ' '
+    display: block
+    height: 49.4px
+    margin-top: -49.4px 
+
+.visibility
+    visibility: hidden
+
+
+
+//NAVIGATION
+nav
+    transition: background-color .4s
+    text-transform: uppercase
+    
+
+    a, i
+        color: #ffffff
+        text-decoration: none
+        transition: color .3s
+        font-size: 13px
+
+    a:hover
+        color: $blue-color
+
+    i
+        padding: 5px
+        transition: .3s
+
+    span
+        text-transform: lowercase
+
+    .navbar-nav
+        display: flex
+        align-items: flex-end
+        // padding: 0 5px  
+
+    .nav-item
+        font-size: 10px
+        margin: -6px 0
+     
+
+    .navbar-brand
+        font-weight: bold
+        font-size: 13px
+        font-family: 'Kaushan Script', cursive;
+
+    .navbar-toggler:hover
+        font-size: 1.3rem
+        transition: .3s
+
+    .active
+        color: $blue-color
+
+.shadow-bg
+    background-color: rgba(0,0,0,0.8)
+
+//HEADER
+    
+header
+    color: #fff
+    overflow: hidden
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/gosiaradektuo.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+    .hero-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.6)
+        z-index: -1
+
+    .hero-text
+        display: flex
+        height: 100%
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        letter-spacing: 2px
+        text-align: center
+        
+        h1
+            font-size: 20px
+            font-family: 'Kaushan Script', cursive;
+            letter-spacing: 5px
+
+        p
+            font-size: 14px
+            letter-spacing: 3px
+
+    .btn-outline-light:hover
+        text-transform: uppercase
+
+//MAIN
+main
+    #services
+        .jumbotron
+            position: relative
+            background-image: url('../img/18tkaMartynyPolak.jpg')
+            background-position: center
+            background-size: cover
+            background-attachment: fixed
+            z-index: 0
+         
+        .services-shadow
+            position: absolute
+            width: 100%
+            height: 100%
+            background-color: rgba(0,0,0,0.4)
+            z-index: -1
+        
+        .wrapper
+            color: white
+
+            h2
+                padding-top: 10px
+
+            .row
+                .text-center
+                    transition: color .3s
+                    padding: 20px
+                    visibility: hidden
+
+                    p
+                        font-size: 35px
+                        margin-bottom: -20px
+
+                    h3
+                        margin: 0
+                        font-size: 20px
+
+                .text-center:hover
+                    color: $blue-color
+
+    #portfolio
+        .jumbotron
+            .wrapper
+                padding-top: 0
+                
+            h2, p
+                text-align: center
+                padding: 10px 0
+
+            h2
+                padding-top: 20px
+                margin: 0
+
+            p
+                margin-bottom: 0px
+                padding: 20px 0 10px 0
+            .card-title
+                text-align: center
+
+        .carousel-inner
+            .carousel-item
+                position: relative
+                height: 600px          
+            
+                img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+
+        .carousel-caption
+            position: absolute
+            left: 0
+            right: 0
+            background-color: rgba(0,0,0,0.7)
+        
+    #offer
+        .offer-wrapper
+            // width: 60%
+            display: flex
+            justify-content: center
+            padding: 10px 0 30px
+            margin: 0 auto
+            width: 95%
+            
+            .offer-box
+                margin: 20px 10px
+                padding: 10px 0
+                background-color: #fff
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.6)
+                transition: transform .3s
+
+                h3
+                    font-size: 18px
+                    text-transform: uppercase
+                    color: $blue-color
+                p
+                    padding: 2px 0
+                    margin: 5px 0
+                    font-size: 12px
+
+                i
+                    padding: 0 5px
+                    font-size: 18px
+
+                button
+                    padding: 10px 20px
+
+            .offer-box:hover
+                transform: scale(1.05)
+    #guarantee
+        .jumbotron
+            position: relative
+            background-image: url(../img/tuovinylsm.jpg)
+            background-position: center
+            background-size: cover
+            background-attachment: fixed
+            z-index: 0
+            .guarantee-shadow
+                background-color: rgba(0,0,0,.6)
+                position: absolute
+                height: 100%
+                width: 100%
+                z-index: -1
+            h2
+                color: white
+                padding-top: 40px
+            .card-deck
+                margin: 50px auto 0px
+                padding-bottom: 30px
+                h5
+                    text-align: center
+                    text-transform: uppercase
+                    font-weight: bold
+                p
+                    font-size: 14px
+                .card
+                    height: 410px
+                    transition: transform .3s
+                    p
+                        padding: 0
+                .card:hover
+                    transform: scale(0.97)
+    #achievements
+        .jumbotron
+            .text-center
+                padding: 10px    
+                p
+                    padding: 5px 0
+                    i
+                        font-size: 60px
+
+
+    #contact
+        .jumbotron
+            overflow-x: hidden
+            position: relative
+            background-image: url(../img/keepintouchsm.png)
+            background-position: left
+            background-size: cover
+            z-index: 0
+            color: white
+            .guarantee-shadow
+                background-color: rgba(0,0,0,.6)
+                position: absolute
+                height: 100%
+                width: 100%
+                z-index: -1
+            .row
+                padding-top: 20px
+                a
+                    text-decoration: none
+                    color: white
+                .text-center
+                    transition: transform .3s
+                    padding: 0
+                p
+                    font-size: 16px
+                    padding: 0px
+                    i
+                        font-size: 30px
+                        padding: 0px
+                    span
+                        text-align: center
+                        font-size: 18px
+                        padding: 5px
+                        text-transform: uppercase
+                .text-center:hover
+                    transform: scale(1.05)
+footer
+    p
+        margin: 0
+        padding: 3px
+        font-size: 12px
+        color: #bbb
+@media(max-width: 767px)
+    .fa-angle-double-down
+        font-size: 0px
+
+@media(min-width: 1120px)
+    main
+        #portfolio
+            .carousel-inner
+                .carousel-item
+                    img
+                        top: 50%
+
+@media(min-width: 1420px)
+    main
+        #portfolio
+            .carousel-inner
+                .carousel-item
+                    img
+                        top: 60%
+
+@media(min-width: 1670px)
+    main
+        #portfolio
+            .carousel-inner
+                .carousel-item
+                    background-size: cover
+
+                    img
+                        top: 70%
+        #aboutus
+            .jumbotron
+                .wrapper
+                    p
+                        width: 75%
+                        margin: 0 auto
+
+@media (min-width: 436px)
+    main
+        #guarantee
+            .jumbotron
+                .card-deck
+                    .card
+                        height: 450px
+
+
+
+
+
+
+
+
+
+
+
+
+

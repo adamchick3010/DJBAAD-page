@@ -1,0 +1,72 @@
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.scroll-fix::before {
+  content: ' ';
+  display: block;
+  height: 58.4px;
+  margin-top: -58.4px;
+}
+
+nav a, nav i {
+  font-size: 23px;
+}
+
+.navbar-brand {
+  font-size: 23px;
+}
+
+.nav-item {
+  font-size: 17px;
+  margin: -5px 0;
+}
+
+header .hero-text h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+header .hero-text p {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+header .fa-angle-double-down {
+  display: inline;
+  position: absolute;
+  bottom: 4%;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: bounce 1.6s infinite;
+          animation: bounce 1.6s infinite;
+}
+
+header .fa-angle-double-down:hover {
+  color: #fff;
+}
+
+main #offer .jumbotron .offer-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main #guarantee .jumbotron .card-deck .card {
+  height: 420px;
+}
+
+main #contact .jumbotron .row p {
+  font-size: 20px;
+}
+
+main #contact .jumbotron .row p span {
+  font-size: 25px;
+}
+/*# sourceMappingURL=medium.css.map */
